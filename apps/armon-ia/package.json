@@ -1,5 +1,5 @@
 {
-  "name": "armon-ia",
+  "name": "@armon-ia/armon-ia",
   "private": true,
   "type": "module",
   "scripts": {
