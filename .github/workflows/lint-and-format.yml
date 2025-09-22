@@ -39,3 +39,7 @@ jobs:
       - name: Lint code
         run: pnpm -r lint
         if: ${{ always() }}
+
+      - name: Typecheck
+        run: pnpm -r typecheck
+        if: ${{ always() }}
