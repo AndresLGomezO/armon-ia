@@ -75,6 +75,7 @@ tsconfig.tsbuildinfo
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+.vite/
 
 # Changesets
 .changeset/changelog-github-custom.cjs
