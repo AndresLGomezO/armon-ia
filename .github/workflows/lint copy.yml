@@ -1,13 +1,13 @@
-name: Lint and Format Check
+name: Typecheck
 
 on:
   pull_request:
     types: [opened, synchronize, reopened]
   push:
-    branches: [main, master]
-
+    branches: [master]
+        
 jobs:
-  lint-and-format:
+  typecheck:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,13 +33,6 @@ jobs:
             pnpm install
           fi
         
-      - name: Check formatting
-        run: pnpm format:check
-        
-      - name: Lint code
-        run: pnpm -r lint
-        if: ${{ always() }}
-
       - name: Typecheck
         run: pnpm -r typecheck
         if: ${{ always() }}
