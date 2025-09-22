@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+coverage/
+
+# Cache
+.cache/
+.turbo/
+.parcel-cache/
+
+# Version control
+.git/
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.min.js
+*.min.css
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Specific files
+*.md
+*.mdx
+CHANGELOG.md
+LICENSE
+
+# Generated files
+*.generated.*

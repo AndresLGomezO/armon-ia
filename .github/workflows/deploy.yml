@@ -40,7 +40,13 @@ jobs:
           cache: 'pnpm'
           
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          if [ -f "pnpm-lock.yaml" ]; then
+            pnpm install --frozen-lockfile
+          else
+            echo "Warning: pnpm-lock.yaml not found, installing without frozen lockfile"
+            pnpm install
+          fi
         
       - name: Build armon-ia app
         run: pnpm --filter @armon-ia/armon-ia build
