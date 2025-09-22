@@ -6,7 +6,10 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && tsc",
+    "lnt": "eslint app --ext .js,.jsx,.ts,.tsx",
+    "lint": "pnpm lnt",
+    "lint:fix": "pnpm lnt --fix"
   },
   "dependencies": {
     "@react-router/node": "^7.7.1",
