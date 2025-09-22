@@ -7,7 +7,7 @@
     "prettier-plugin-tailwindcss",
     "@trivago/prettier-plugin-sort-imports"
   ],
-  "tailwindConfig": "./apps/armon-ia/tailwind.config.js",
+  "tailwindConfig": "./apps/armon-ia/tailwind.config.ts",
   "tailwindFunctions": ["clsx", "cn", "twMerge"],
   "semi": false,
   "singleQuote": true,
