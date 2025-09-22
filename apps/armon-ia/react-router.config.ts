@@ -1,4 +1,5 @@
 import type { Config } from '@react-router/dev/config'
+import { vercelPreset } from '@vercel/react-router/vite'
 
 export default {
   // Config options...
@@ -6,4 +7,5 @@ export default {
   ssr: false,
   basename: process.env.NODE_ENV === 'production' ? '/armon-ia/' : '/',
   buildDirectory: 'build',
+  presets: [vercelPreset()],
 } satisfies Config
