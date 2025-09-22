@@ -1,12 +1,13 @@
 {
-  "name": "armon-ia-monorepo",
+  "name": "@armon-ia/monorepo",
   "version": "1.0.0",
   "private": true,
   "description": "ArmonIA Monorepo Project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm -r --parallel run dev",
-    "build": "pnpm -r run build"
+    "build": "pnpm -r run build",
+    "build:armon-ia": "pnpm --filter @armon-ia/armon-ia build"
   },
   "devDependencies": {},
   "engines": {
