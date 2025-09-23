@@ -1,0 +1,138 @@
+# ArmonIA Project - Cursor Development Rules
+
+## Project Overview
+This is a React Router v7 monorepo project using TypeScript, Tailwind CSS, and pnpm as the package manager.
+
+## Code Style & Formatting
+- Use Prettier for code formatting with the existing configuration
+- Follow the established import order: third-party modules, internal modules (@/), relative imports
+- Use single quotes for strings, no semicolons
+- Use 2 spaces for indentation, no tabs
+- Maximum line length: 80 characters
+- Use trailing commas in ES5 style
+- Always use arrow functions with parentheses around parameters
+
+## TypeScript Guidelines
+- Use strict TypeScript configuration
+- Prefer explicit types over `any`
+- Use interfaces for object shapes, types for unions/primitives
+- Use proper generic constraints
+- Always type function parameters and return values
+- Use `const assertions` for literal types when appropriate
+
+## React Router v7 Specific Rules
+- Use the new React Router v7 patterns and conventions
+- Prefer `loader` and `action` functions for data fetching
+- Use proper error boundaries and error handling
+- Follow the file-based routing structure
+- Use proper TypeScript types for route parameters and search params
+
+## Component Guidelines
+- Use functional components with hooks
+- Prefer composition over inheritance
+- Use proper prop types and interfaces
+- Keep components small and focused on single responsibility
+- Use custom hooks for reusable logic
+- Prefer controlled components over uncontrolled
+
+## Styling with Tailwind CSS
+- Use Tailwind utility classes for styling
+- Follow the established Tailwind configuration
+- Use `clsx` or `cn` for conditional classes
+- Prefer Tailwind classes over custom CSS
+- Use responsive design utilities (sm:, md:, lg:, xl:)
+- Follow the established color palette and design system
+
+## File Organization
+- Use the monorepo structure with apps/ directory
+- Keep related files together (components, styles, tests)
+- Use proper barrel exports (index.ts files)
+- Follow the established folder structure
+- Use descriptive file and folder names
+
+## Import/Export Rules
+- Use named exports over default exports for utilities
+- Use default exports for React components
+- Group imports: third-party, internal, relative
+- Use absolute imports with @/ alias for internal modules
+- Sort imports alphabetically within groups
+
+## Performance Guidelines
+- Use React.memo for expensive components
+- Use useMemo and useCallback appropriately
+- Avoid unnecessary re-renders
+- Use proper key props for lists
+- Implement proper loading states
+- Use code splitting for large components
+
+## Error Handling
+- Use proper error boundaries
+- Implement proper loading and error states
+- Use try-catch blocks for async operations
+- Provide meaningful error messages
+- Log errors appropriately
+
+## Testing Guidelines
+- Write unit tests for utilities and hooks
+- Write integration tests for components
+- Use proper test naming conventions
+- Mock external dependencies
+- Test error scenarios and edge cases
+
+## Git & Version Control
+- Use conventional commit messages
+- Create feature branches for new features
+- Use proper PR descriptions
+- Keep commits atomic and focused
+- Use proper branch naming conventions
+
+## Development Workflow
+- Use pnpm for package management
+- Run linting and formatting before commits
+- Use the established CI/CD pipeline
+- Follow the monorepo development patterns
+- Use proper environment variables
+
+## Security Guidelines
+- Sanitize user inputs
+- Use proper authentication and authorization
+- Follow OWASP security guidelines
+- Use HTTPS in production
+- Implement proper CORS policies
+
+## Documentation
+- Write clear and concise comments
+- Document complex logic and algorithms
+- Use JSDoc for function documentation
+- Keep README files updated
+- Document API endpoints and data structures
+
+## Code Quality
+- Write self-documenting code
+- Use meaningful variable and function names
+- Avoid deep nesting (max 3 levels)
+- Use early returns to reduce complexity
+- Keep functions small and focused
+
+## Accessibility
+- Use semantic HTML elements
+- Implement proper ARIA attributes
+- Ensure keyboard navigation works
+- Use proper color contrast ratios
+- Test with screen readers
+
+## Performance Monitoring
+- Use proper loading states
+- Implement error boundaries
+- Monitor bundle size
+- Use proper caching strategies
+- Optimize images and assets
+
+## Deployment
+- Use proper environment configurations
+- Implement proper build processes
+- Use proper deployment strategies
+- Monitor application performance
+- Implement proper logging
+
+Remember: Always prioritize code readability, maintainability, and user experience over clever or complex solutions.
