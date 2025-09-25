@@ -3,7 +3,11 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
-export default defineConfig(({ mode }) => ({
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-  base: mode === 'production' ? '/armon-ia/' : '/',
-}))
+export default defineConfig(({ mode }) => {
+  const isVercel = process.env.VERCEL === '1'
+  const base = isVercel ? '/' : mode === 'production' ? '/armon-ia/' : '/'
+  return {
+    plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+    base: base,
+  }
+})
