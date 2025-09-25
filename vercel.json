@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd apps/armon-ia/ && pnpm run build",
+  "buildCommand": "pnpm build",
   "outputDirectory": "apps/armon-ia/build/client",
   "installCommand": "pnpm install",
   "framework": null,
