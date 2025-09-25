@@ -58,7 +58,6 @@ const baseConfig: DeepPartial<Config> = {
 
 export function defineConfig(config: DeepPartial<Config> = {}): Config {
   const mergedConfig = merge({}, config, baseConfig) as Config
-  console.log(merge)
 
   mergedConfig.plugins = mergedConfig.plugins ?? []
 
