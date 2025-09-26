@@ -32,6 +32,12 @@ jobs:
             echo "Warning: pnpm-lock.yaml not found, installing without frozen lockfile"
             pnpm install
           fi
+
+      - name: Build app
+        run: |
+          pnpm build
+        env:
+          NODE_ENV: production
         
       - name: Typecheck
         run: pnpm -r typecheck

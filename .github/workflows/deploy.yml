@@ -50,7 +50,7 @@ jobs:
         
       - name: Build armon-ia app
         run: |
-          pnpm --filter @armon-ia/armon-ia build
+          pnpm build
           # Copy index.html to 404.html for GitHub Pages routing
           cp ./apps/armon-ia/build/client/index.html ./apps/armon-ia/build/client/404.html
         env:

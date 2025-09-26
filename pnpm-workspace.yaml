@@ -3,3 +3,8 @@ packages:
   - packages/*
 
 neverBuiltDependencies: []
+
+catalog:
+  tailwindcss: 3.4.4
+  tsdown: ~0.14.1
+  zod: ~4.0.5
