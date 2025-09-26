@@ -1,6 +1,6 @@
 import plugin from 'tailwindcss/plugin'
 
-export const baseFontSans = 'Inter'
+export const baseFont = 'Montserrat'
 
 const fontWeights = {
   thin: 100,

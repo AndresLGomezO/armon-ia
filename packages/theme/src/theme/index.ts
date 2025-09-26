@@ -2,15 +2,15 @@ import merge from 'lodash.merge'
 
 import {
   baseBlack,
-  baseBlue,
+  baseCharcoal,
+  baseCream,
+  baseGold,
   baseGray,
-  baseGreen,
-  basePurple,
-  baseRed,
+  baseSage,
   baseWhite,
-  baseYellow,
+  baseWine,
 } from './colors'
-import { baseFontSans } from './fonts'
+import { baseFont } from './fonts'
 import {
   type ThemeConfig,
   type ThemeConfigUpdate,
@@ -26,19 +26,19 @@ export { type ThemeConfig }
 
 export const baseThemeConfig: ThemeConfig = {
   colors: {
-    primary: baseBlue,
-    secondary: baseGray,
+    primary: baseCharcoal,
+    secondary: baseGold,
     gray: baseGray,
-    blue: baseBlue,
-    green: baseGreen,
-    red: baseRed,
-    yellow: baseYellow,
+    charcoal: baseCharcoal,
+    sage: baseSage,
+    wine: baseWine,
+    cream: baseCream,
     white: baseWhite,
     black: baseBlack,
-    purple: basePurple,
+    gold: baseGold,
   },
   fontFamily: {
-    sans: baseFontSans,
+    sans: baseFont,
   },
 }
 

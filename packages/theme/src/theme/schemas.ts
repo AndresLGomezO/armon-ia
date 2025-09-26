@@ -24,12 +24,12 @@ const themeColorPaletteSchema = z.object({
 const themeColorsSchema = z.object({
   primary: themeColorPaletteSchema,
   secondary: themeColorPaletteSchema,
-  blue: themeColorPaletteSchema,
   gray: themeColorPaletteSchema,
-  green: themeColorPaletteSchema,
-  red: themeColorPaletteSchema,
-  yellow: themeColorPaletteSchema,
-  purple: themeColorPaletteSchema,
+  charcoal: themeColorPaletteSchema,
+  sage: themeColorPaletteSchema,
+  gold: themeColorPaletteSchema,
+  wine: themeColorPaletteSchema,
+  cream: themeColorPaletteSchema,
   white: themeHexSchema,
   black: themeHexSchema,
 })
