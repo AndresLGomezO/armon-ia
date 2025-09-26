@@ -1,10 +1,10 @@
 import { ThemeShowcase } from '../welcome/theme-book'
-import type { Route } from './+types/home'
+import type { Route } from './+types/_private.home'
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'New React Router App' },
-    { name: 'description', content: 'Welcome to React Router!' },
+    { title: 'Armon-ia' },
+    { name: 'description', content: 'Welcome to Armon-ia!' },
   ]
 }
 
