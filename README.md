@@ -1,2 +1,2 @@
 # armon-ia
-ArmonIA Modular
+ArmonIA Modular Monorepo
