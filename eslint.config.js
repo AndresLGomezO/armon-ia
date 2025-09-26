@@ -45,6 +45,7 @@ module.exports = tseslint.config(
       '**/dist/*',
       '**/.react-router/*',
       '**/build/*',
+      '**/.vercel/*',
     ],
   }
 )

@@ -28,14 +28,18 @@ const isValidIconKey = (icon: string): icon is IconKey => {
 }
 
 const NavigationIcon = memo<{ icon?: string }>(({ icon }) => {
-  if (!icon || !isValidIconKey(icon)) return null
+  if (!icon || !isValidIconKey(icon)) {
+    return null
+  }
 
   return <span aria-hidden="true">{iconMap[icon]}</span>
 })
 
 const NavigationBadge = memo<{ badge: NavigationItem['badge'] }>(
   ({ badge }) => {
-    if (!badge) return null
+    if (!badge) {
+      return null
+    }
 
     const badgeClass =
       badge.type === 'count' ? badgeStyles.count : badgeStyles.default

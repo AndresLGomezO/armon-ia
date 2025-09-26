@@ -38,16 +38,11 @@ export interface AvatarProps {
   onClick?: () => void
 }
 
-interface AvatarGroupProps {
-  avatars: Array<{ src?: string; name: string; alt?: string }>
-  max?: number
-  size?: AvatarSize
-  className?: string
-}
-
 // Utility functions
 function getInitials(name: string): string {
-  if (!name || typeof name !== 'string') return ''
+  if (!name || typeof name !== 'string') {
+    return ''
+  }
 
   const words = name.trim().split(/\s+/)
   const initials = words

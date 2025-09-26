@@ -12,7 +12,7 @@ const app = express()
 
 async function startServer() {
   if (DEVELOPMENT) {
-    console.log('Starting development server')
+    // console.log('Starting development server')
 
     const vite = await import('vite')
     const viteDevServer = await vite.createServer({
@@ -32,7 +32,7 @@ async function startServer() {
       }
     })
   } else {
-    console.log('Starting production server')
+    // console.log('Starting production server')
     app.use(
       '/assets',
       express.static('build/client/assets', { immutable: true, maxAge: '1y' })
@@ -41,12 +41,12 @@ async function startServer() {
     app.use(await import(BUILD_PATH).then((mod) => mod.app))
   }
 
-  const server = app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`, { port: PORT })
+  app.listen(PORT, () => {
+    // console.log(`Server is running on http://localhost:${PORT}`, { port: PORT })
   })
 }
 
-startServer().catch((err) => {
-  console.error('Failed to start server', err)
+startServer().catch(() => {
+  // console.error('Failed to start server', err)
   process.exit(1)
 })
