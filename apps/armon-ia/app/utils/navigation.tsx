@@ -22,33 +22,7 @@ export const navigationItems: NavigationItem[] = [
         href: '/products',
         permissions: ['view_products'],
       },
-      {
-        id: 'categories',
-        name: 'Categories',
-        href: '/products/categories',
-        permissions: ['manage_categories'],
-      },
-      {
-        id: 'inventory',
-        name: 'Inventory',
-        href: '/products/inventory',
-        permissions: ['manage_inventory'],
-      },
-      {
-        id: 'add-product',
-        name: 'Add Product',
-        href: '/products/new',
-        permissions: ['create_products'],
-      },
     ],
-  },
-  {
-    id: 'orders',
-    name: 'Orders',
-    href: '/orders',
-    icon: 'clipboard',
-    permissions: ['view_orders'],
-    badge: { type: 'count', value: 12 },
   },
 ]
 
